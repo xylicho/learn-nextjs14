@@ -1,4 +1,4 @@
-import { API_URL } from '../app/(home)/page';
+import {API_URL} from '../app/constans';
 import style from '../styles/movie.video.module.css';
 
 async function getVideos(id: string) {
@@ -7,7 +7,7 @@ async function getVideos(id: string) {
   return response.json();
 }
 
-export default async function MovieVideos({ id }: { id: string }) {
+export default async function MovieVideos({id}: {id: string}) {
   const videos = await getVideos(id);
   return (
     <div className={style.container}>
@@ -22,5 +22,4 @@ export default async function MovieVideos({ id }: { id: string }) {
       ))}
     </div>
   );
- };
-
+}
