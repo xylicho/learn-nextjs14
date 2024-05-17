@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build":"next build",
-    "start" : "next start"
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "MIT",
@@ -16,6 +16,8 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "18.3.2"
+    "@types/node": "^20.12.12",
+    "@types/react": "18.3.2",
+    "typescript": "^5.4.5"
   }
 }
